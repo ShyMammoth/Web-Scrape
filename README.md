@@ -1,10 +1,10 @@
 # Web-Scrape
-## Scrapy
-1. Giant hypermarket (/Scrapy/rice.json)
-2. Tripadvisor (/Scrapy/tripadvisor.json)
+## 1. Scrapy
+- Giant hypermarket (/Scrapy/rice.json)
+- Tripadvisor (/Scrapy/tripadvisor.json)
 
-## Beautiful_Soup
-1. Language (/Beautiful_Soup/Random Projects/Language/)
+## 2. Beautiful_Soup
+- Language (/Beautiful_Soup/Random Projects
 
-## Selenium
+## 3. Selenium
 NIL
