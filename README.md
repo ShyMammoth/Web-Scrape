@@ -1,5 +1,5 @@
 # Web-Scrape
-The purpose of this Git is purely educational. Scraping may not be legal under your jurisdiction.
+The purpose of this Git is purely educational.
 
 ## 1. Scrapy
 - Tripadvisor (/Scrapy/demo_project/spiders/tripadvisor.py)
