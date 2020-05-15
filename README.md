@@ -2,8 +2,9 @@
 The purpose of this Git is purely educational.
 
 ## 1. Scrapy
-- Tripadvisor (/Scrapy/demo_project/spiders/tripadvisor.py)
 - MySkillsFuture (/Scrapy/demo_project/spiders/myskillsfuture.py)
+- Tripadvisor (/Scrapy/demo_project/spiders/tripadvisor.py)
+- Qoo10 (/Scrapy/demo_project/spiders/qoo10.py)
 - Giant Hypermarket (/Scrapy/demo_project/spiders/rice.py)
 - Jokes (/Scrapy/demo_project/spiders/jokes.py)
 
@@ -19,5 +20,3 @@ Run `main.sh` file. This:
 1. Removes existing files (if not it will append)
 2. Scrapes using all scrapy scripts into .json
 3. Convert .json in 'scraped_json' folder into .csv in 'converted_csv' folder
-
-(Doesn't work now)
