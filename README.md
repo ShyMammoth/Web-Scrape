@@ -1,5 +1,5 @@
 # Web-Scrape
-Scraping may not be legal under your jurisdiction. The purpose of this Git is purely educational. Do use this git's content as a reference only.
+The purpose of this Git is purely educational. Scraping may not be legal under your jurisdiction.
 
 ## 1. Scrapy
 - Tripadvisor (/Scrapy/demo_project/spiders/tripadvisor.py)
