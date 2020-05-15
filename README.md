@@ -1,5 +1,5 @@
 # Web-Scrape
-List of working scrapers:
+Scraping may not be legal under your jurisdiction. The purpose of this Git is purely educational. Do use this git's content as a reference only.
 
 ## 1. Scrapy
 - Tripadvisor (/Scrapy/demo_project/spiders/tripadvisor.py)
@@ -15,7 +15,7 @@ NIL
 
 # Workflow
 ## 1. Scrapy
-Run `main.sh` file. This does
-1. Remove existing files (if not it will append)
-2. Scrape websites
+Run `main.sh` file. This:
+1. Removes existing files (if not it will append)
+2. Scrapes using all scrapy scripts into .json
 3. Convert .json in 'scraped_json' folder into .csv in 'converted_csv' folder
