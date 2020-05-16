@@ -12,10 +12,13 @@ The purpose of this Git is purely educational.
 ## 2. Scrapy (with Splash)
 - Quotes (/Scrapy (dynamic)/project/spiders/quotes.py)
 
-## 3. Beautiful_Soup
+## 3. Scrapy (files)
+- Tiktok videos (/Scrapy (tiktok)/project/spiders/tiktok.py)
+
+## 4. Beautiful_Soup
 - Language (/Beautiful_Soup/Random Projects/Language/Language.py)
 
-## 4. Selenium
+## 5. Selenium
 TBC (Tradingview, Linkedin)
 
 <!-- # Workflow

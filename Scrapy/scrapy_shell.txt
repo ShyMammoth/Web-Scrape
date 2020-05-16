@@ -1,0 +1,7 @@
+Infinite scroll:
+
+scrapy shell http://quotes.toscrape.com/api/quotes?page=2
+response.text
+import json
+data = json.loads(data)
+data.keys()
