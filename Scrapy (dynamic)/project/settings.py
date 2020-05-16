@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for demo_project2 project
+# Scrapy settings for project project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,28 +9,28 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'demo_project2'
+BOT_NAME = 'project'
 
-SPIDER_MODULES = ['demo_project2.spiders']
-NEWSPIDER_MODULE = 'demo_project2.spiders'
+SPIDER_MODULES = ['project.spiders']
+NEWSPIDER_MODULE = 'project.spiders'
+
+SPLASH_URL = 'http://192.168.99.100:8050'
 
 DOWNLOADER_MIDDLEWARES = {
     'scrapy_splash.SplashCookiesMiddleware': 723,
     'scrapy_splash.SplashMiddleware': 725,
-    'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware': 810
+    'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware': 810,
 }
-
-SPLASH_URL = 'http://localhost:8050'
-# http://192.168.99.100:8050/
-
+SPIDER_MIDDLEWARES = {
+    'scrapy_splash.SplashDeduplicateArgsMiddleware': 100,
+}
 DUPEFILTER_CLASS = 'scrapy_splash.SplashAwareDupeFilter'
-HTTPCACHE_STORAGE = 'scrapy_splash.SplashAwareFSCacheStorage'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'demo_project2 (+http://www.yourdomain.com)'
+#USER_AGENT = 'project (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -58,13 +58,13 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'demo_project2.middlewares.DemoProject2SpiderMiddleware': 543,
+#    'project.middlewares.ProjectSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'demo_project2.middlewares.DemoProject2DownloaderMiddleware': 543,
+#    'project.middlewares.ProjectDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -76,7 +76,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    'demo_project2.pipelines.DemoProject2Pipeline': 300,
+#    'project.pipelines.ProjectPipeline': 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
