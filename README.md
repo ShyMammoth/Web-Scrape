@@ -9,15 +9,18 @@ The purpose of this Git is purely educational.
 - Giant Hypermarket (/Scrapy/demo_project/spiders/giant.py)
 - Jokes (/Scrapy/demo_project/spiders/jokes.py)
 
-## 2. Beautiful_Soup
+# 2. Scrapy (with Splash)
+- Quotes (/Scrapy (dynamic)/project/spiders/quotes.py)
+
+## 3. Beautiful_Soup
 - Language (/Beautiful_Soup/Random Projects/Language/Language.py)
 
-## 3. Selenium
-NIL
+## 4. Selenium
+TBC (Tradingview, Linkedin)
 
-# Workflow
-## 1. Scrapy
+<!-- # Workflow
+1. Scrapy
 Run `main.sh` file. This:
 1. Removes existing files (if not it will append)
 2. Scrapes using all scrapy scripts into .json
-3. Convert .json in 'scraped_json' folder into .csv in 'converted_csv' folder
+3. Convert .json in 'scraped_json' folder into .csv in 'converted_csv' folder --!>
