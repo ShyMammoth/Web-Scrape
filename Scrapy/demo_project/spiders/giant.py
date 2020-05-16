@@ -1,7 +1,7 @@
 import scrapy
 import datetime
 
-class RiceItem(scrapy.Item):
+class GiantItem(scrapy.Item):
     Date = scrapy.Field()
     Brand = scrapy.Field()
     Details = scrapy.Field()
@@ -9,7 +9,7 @@ class RiceItem(scrapy.Item):
     Price = scrapy.Field()
 
 class RiceSpider(scrapy.Spider):
-  name = 'rice'
+  name = 'giant'
   start_urls = [
     # "https://www.fairprice.com.sg/search?query=rice",
     "https://giant.sg/food-pantry/rice",
@@ -19,7 +19,7 @@ class RiceSpider(scrapy.Spider):
 
   def parse(self, response):
     for rice in response.xpath('//div[@class="col-lg-2 col-md-4 col-6 col_product open-product-detail algolia-click"]'): # Common attribute in page
-      item = RiceItem()
+      item = GiantItem()
       item["Date"] = datetime.datetime.today()
       item["Brand"] = rice.xpath('.//div[@class="category-name"]/a/text()').extract_first()
       item["Details"] = rice.xpath('.//div[@class="product_name "]/a/text()').extract_first()

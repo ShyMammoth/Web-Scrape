@@ -1,0 +1,4 @@
+https://docs.docker.com/toolbox/toolbox_install_windows/
+
+sudo docker pull scrapinghub/splash
+docker run --restart=always --expose 8050 --net=host -p 8050:8050 scrapinghub/splash

@@ -14,6 +14,17 @@ BOT_NAME = 'demo_project2'
 SPIDER_MODULES = ['demo_project2.spiders']
 NEWSPIDER_MODULE = 'demo_project2.spiders'
 
+DOWNLOADER_MIDDLEWARES = {
+    'scrapy_splash.SplashCookiesMiddleware': 723,
+    'scrapy_splash.SplashMiddleware': 725,
+    'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware': 810
+}
+
+SPLASH_URL = 'http://localhost:8050'
+# http://192.168.99.100:8050/
+
+DUPEFILTER_CLASS = 'scrapy_splash.SplashAwareDupeFilter'
+HTTPCACHE_STORAGE = 'scrapy_splash.SplashAwareFSCacheStorage'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'demo_project2 (+http://www.yourdomain.com)'

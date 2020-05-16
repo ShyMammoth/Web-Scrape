@@ -5,7 +5,8 @@ The purpose of this Git is purely educational.
 - MySkillsFuture (/Scrapy/demo_project/spiders/myskillsfuture.py)
 - Tripadvisor (/Scrapy/demo_project/spiders/tripadvisor.py)
 - Qoo10 (/Scrapy/demo_project/spiders/qoo10.py)
-- Giant Hypermarket (/Scrapy/demo_project/spiders/rice.py)
+- Fairprice (/Scrapy/demo_project/spiders/fairprice.py)
+- Giant Hypermarket (/Scrapy/demo_project/spiders/giant.py)
 - Jokes (/Scrapy/demo_project/spiders/jokes.py)
 
 ## 2. Beautiful_Soup
