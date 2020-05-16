@@ -9,7 +9,7 @@ The purpose of this Git is purely educational.
 - Giant Hypermarket (/Scrapy/demo_project/spiders/giant.py)
 - Jokes (/Scrapy/demo_project/spiders/jokes.py)
 
-# 2. Scrapy (with Splash)
+## 2. Scrapy (with Splash)
 - Quotes (/Scrapy (dynamic)/project/spiders/quotes.py)
 
 ## 3. Beautiful_Soup
