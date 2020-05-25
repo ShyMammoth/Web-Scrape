@@ -27,3 +27,4 @@ Run `main.sh` file. This:
 1. Removes existing files (if not it will append)
 2. Scrapes using all scrapy scripts into .json
 3. Convert .json in 'scraped_json' folder into .csv in 'converted_csv' folder --!>
+ 
